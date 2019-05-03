@@ -3,12 +3,6 @@
   
     <url>
     
-      <loc>/publication/big_bayes/</loc>
-      <lastmod>2019-04-04T21:11:16-04:00</lastmod>
-    </url>
-  
-    <url>
-    
       <loc>/publication/star/</loc>
       <lastmod>2019-03-31T21:26:55-04:00</lastmod>
     </url>
@@ -40,14 +34,14 @@
     <url>
     
       <loc>/authors/botao-hao/</loc>
-      <lastmod>2019-04-04T21:11:16-04:00</lastmod>
+      <lastmod>2019-03-31T21:26:55-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>/publication_types/2/</loc>
-      <lastmod>2019-04-04T21:11:16-04:00</lastmod>
+      <lastmod>2019-03-31T21:26:55-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -74,7 +68,7 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2019-04-04T21:11:16-04:00</lastmod>
+      <lastmod>2019-03-31T21:26:55-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -94,7 +88,7 @@
     <url>
     
       <loc>/authors/guang-cheng/</loc>
-      <lastmod>2019-04-04T21:11:16-04:00</lastmod>
+      <lastmod>2018-03-31T20:53:11-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -122,7 +116,7 @@
     <url>
     
       <loc>/publication_types/</loc>
-      <lastmod>2019-04-04T21:11:16-04:00</lastmod>
+      <lastmod>2019-03-31T21:26:55-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -153,13 +147,6 @@
   
     <url>
     
-      <loc>/authors/zuofeng-shang/</loc>
-      <lastmod>2019-04-04T21:11:16-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
       <loc>/authors/admin/</loc>
       <priority>0</priority>
     </url>
@@ -167,7 +154,7 @@
     <url>
     
       <loc>/publication/</loc>
-      <lastmod>2019-04-04T21:11:16-04:00</lastmod>
+      <lastmod>2019-03-31T21:26:55-04:00</lastmod>
     </url>
   
 </urlset>
