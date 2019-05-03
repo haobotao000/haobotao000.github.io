@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Botao Hao</title>
+    <link>/publication_types/2/</link>
+    <description>Recent content in 2 on Botao Hao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Mar 2019 21:26:55 -0400</lastBuildDate>
+    
+	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sparse Tensor Additive Regression</title>
+      <link>/publication/star/</link>
+      <pubDate>Sun, 31 Mar 2019 21:26:55 -0400</pubDate>
+      
+      <guid>/publication/star/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sparse and Low-rank Tensor Estimation via Cubic Sketchings</title>
+      <link>/publication/tensor/</link>
+      <pubDate>Sat, 31 Mar 2018 20:53:11 -0400</pubDate>
+      
+      <guid>/publication/tensor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simultaneous Clustering and Estimation of Heterogeneous Graphical Models</title>
+      <link>/publication/jcgl/</link>
+      <pubDate>Wed, 31 Jan 2018 21:18:02 -0400</pubDate>
+      
+      <guid>/publication/jcgl/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
