@@ -6,10 +6,19 @@
     <description>Recent content in Guang Cheng on Botao Hao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Mar 2018 20:53:11 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 20:58:03 +0100</lastBuildDate>
     
 	<atom:link href="/authors/guang-cheng/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bootstrapping Upper Confidence Bound</title>
+      <link>/publication/bucb/</link>
+      <pubDate>Tue, 11 Jun 2019 20:58:03 +0100</pubDate>
+      
+      <guid>/publication/bucb/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Sparse and Low-rank Tensor Estimation via Cubic Sketchings</title>
