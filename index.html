@@ -1,297 +1,272 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./Botao_files/main.css" rel="stylesheet" type="text/css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Botao Hao</title>
+  <meta name="description" content="Personal webpage of Botao Hao.">
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #13202f;
+      --muted: #4d6278;
+      --link: #0b5cab;
+      --border: #d8e1ec;
+      --accent: #f5fbff;
+      --highlight: #9a1f1f;
+      --maxw: 980px;
+    }
 
-<style>
-body {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-a {text-decoration : red; color : blue;}
-a:hover {text-decoration:underline; color: #8C1515; }
-</style>
+    * { box-sizing: border-box; }
 
-<style>
-.disabled{
-    pointer-events: none;
-    color:black;
-}
-</style>
+    body {
+      margin: 0;
+      padding: 32px 16px 56px;
+      background: radial-gradient(circle at top right, #edf5ff, var(--bg) 35%), var(--bg);
+      color: var(--text);
+      font-family: "Georgia", "Times New Roman", serif;
+      line-height: 1.55;
+    }
 
-<script>
-function copy(dest, source) {
-  if(dest.source == source) {
-    dest.innerHTML = "";
-    dest.source = null;
-  }
-  else {
-    dest.innerHTML = source.innerHTML;
-    dest.source = source;
-  }
-  dest.blur();
-}
-</script>
-  
-    <title>Botao Hao</title>
-    <link rel="stylesheet" type="text/css" href="./Botao_files/html-style.css">
-    <meta name="author" content="Botao Hao">
-    <meta name="copyright" content="© 2021 Botao Hao">
-    <meta http-equiv="Content-language" content="en">
-    
-    <meta name="description" content="Home page of Botao Hao">
-    <meta name="keywords" content="Botao Hao">
-    <meta name="keywords" lang="es" content="Botao Hao">
-    <meta name="robots" content="all">
-  </head>
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
 
-  <body data-new-gr-c-s-check-loaded="14.1014.0" data-gr-ext-installed="">
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
 
-    <table border="0" cellspacing="0" cellpadding="20">
-      <tbody>
-	<tr>
-	  <td align="left"><img width="200" height="300" border="0" src="./Botao_files/my_page_photo.jpeg" alt="Botao Hao" title="Botao Hao"></td>
-	  <!--<td width="20">&nbsp;</td>-->
-	  <!--<td align="left" nowrap>-->
-    <td nowrap="" width="500">
-	    <h2>Botao Hao (郝博韬)</h2>
-		
-	    Research Scientist <br>
-	    OpenAI<br>
-		<br>
-		
-            Email: haobotao000@gmail.com <br>
-		<a href="https://scholar.google.com/citations?user=7Pi9XrQAAAAJ&hl=en">[Google Scholar]</a>
-		<a href="https://www.linkedin.com/in/botao-hao-23833193/">[Linkedin]</a>
-		<br>
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: grid;
+      gap: 20px;
+    }
 
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+    }
 
+    .hero {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 20px;
+      align-items: center;
+    }
 
-                <h3>About Me</h3>
-				
-				
-                <div style="width:100%; height:100px; overflow-y:scroll;"><table width="100%">
-                  <tbody>
-					  <tr>
-					                      <td width="100px"><calent> 2024 - Now, </calent></td>
-					                      <td><calent> Research Scientist at OpenAI </calent></td>
-					                    </tr>
-					  <tr>
-					                      <td width="100px"><calent> 2020 - 2024, </calent></td>
-					                      <td><calent> Research Scientist at Deepmind </calent></td>
-					                    </tr>
-					  
-					  <tr>
-                    <td width="100px"><calent> 2019 - 2020, </calent></td>
-                    <td><calent> Postdoc in the Department of Electrical Engineering at Princeton University </calent></td>
-                  </tr>
-				  
-					  
-					  <tr>
-                    <td width="100px"><calent> 2014 - 2019, </calent></td>
-                    <td><calent> Ph.D. in Statistics at Purdue University	 </calent></td>
-                  </tr>
-				  
-                </tbody></table></div>
+    .hero img {
+      width: 170px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
 
+    h1 {
+      margin: 0 0 6px;
+      font-size: 2rem;
+    }
 
-                </tbody></table></div>
-	  </td>
-<!--<td><p>This is the paradox of evolution: even if our pain is useful, the urge to escape from the pain remains the most powerful instinct of all. </p></td>-->
-	</tr>
-<!--        <tr>
-          <td align="left"><a href="wang.pdf">Here</a> is a picture made by Seyedshams Feyzabadi for my thesis defense. </td>
-        </tr>-->
-      </tbody>
-    </table>
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+    }
 
+    .subtitle {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
 
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      margin-top: 12px;
+    }
 
+    .highlight {
+      border-color: #e7caca;
+      background: linear-gradient(180deg, #fff7f7, #fff);
+    }
 
-<div class="content">
-	
-	
-<a name="publications" class="disabled"><h3>Research Interests</h3></a>
-I am a research scientist at OpenAI RL and reasoning team working on large-scale RL training, reasoning model and SWE agent. I am a core contributor of o1 and o3. Previouly I spent 3.5 years at Deepmind working on fundamental research on RL and multi-armed bandits. See my talk at Stanford RL forum about information-directed sampling for explorations </calent></td> 
-						<td><calent><a href="https://www.youtube.com/watch?v=YrgOFV7fPcE">[Recording]</a> <a href="Slides_Stanford_information_directed_RL.pdf">[Slides]</a>. 
-	
-<a name="publications" class="disabled"><h3>Selected Publications</h3></a>
+    .highlight h2 {
+      color: var(--highlight);
+    }
 
+    .timeline,
+    .pubs {
+      margin: 0;
+      padding-left: 20px;
+    }
 
-<ul>
-<li><p> 
-<strong>Leveraging Demonstrations to Improve Online Learning: Quality Matters</strong><br>
-<b>Botao Hao</b>, Rahul Jain, Tor Lattimore, Benjamin Van Roy, Zheng Wen <br>
-<em>ICML 2023. </em> [<a href="https://arxiv.org/abs/2302.03319">arXiv</a>]
-</p></li>
+    .timeline li,
+    .pubs li {
+      margin-bottom: 8px;
+    }
 
+    .muted {
+      color: var(--muted);
+    }
 
-<li><p> 
-<strong>Regret Bounds for Information-Directed Reinforcement Learning</strong><br>
-<b>Botao Hao</b>, Tor Lattimore <br>
-<em>NeurIPS 2022. </em> [<a href="https://arxiv.org/abs/2206.04640">arXiv</a>]
-</p></li>	
+    .note {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
 
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 8px;
+    }
 
-<li><p> 
-<strong>Contextual Information-Directed Sampling</strong><br>
-<b>Botao Hao</b>, Tor Lattimore, Chao Qin <br>
-<em>ICML 2022. </em> [<a href="https://arxiv.org/abs/2205.10895">arXiv</a>]
-</p></li>
-	
+    @media (max-width: 760px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
 
+      .hero img {
+        width: 150px;
+        height: 205px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card hero" aria-label="Profile">
+      <img src="Botao_files/my_page_photo.jpeg" alt="Portrait of Botao Hao">
+      <div>
+        <h1>Botao Hao (郝博韬)</h1>
+        <p class="subtitle">Research Scientist, Reasoning Team, OpenAI</p>
+        <p>
+          I am a research scientist in the Reasoning Team at OpenAI. I work on using large-scale RL to train next-generation of reasoning models and build the smartest agent in Codex. I am a core contributor of o1 (<a href="https://arxiv.org/abs/2412.16720">o1 system card</a>), o3 and GPT-5 series (<a href="https://arxiv.org/abs/2601.03267">GPT-5 system card</a>). Previously, I was a Research Scientist at DeepMind and a Postdoc at Princeton University. See my talk at Stanford RL forum about information-directed sampling for explorations <a href="https://www.youtube.com/watch?v=YrgOFV7fPcE">[Recording]</a> <a href="Slides_Stanford_information_directed_RL.pdf">[Slides]</a>.
+        </p>
+        <div class="links">
+          <a href="mailto:haobotao000@gmail.com">haobotao000@gmail.com</a>
+          <a href="https://scholar.google.com/citations?user=7Pi9XrQAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/botao-hao-23833193/">LinkedIn</a>
+        </div>
+      </div>
+    </section>
 
-<li><p> 
-<strong>Online Sparse Reinforcement Learning</strong><br>
-<b>Botao Hao</b>, Tor Lattimore, Csaba Szepesvári, Mengdi Wang <br>
-<em>AISTATS 2021. </em>
-[<a href="https://arxiv.org/pdf/2011.04018.pdf">arXiv</a>]
-[<a href="AISTATS2021_SparseRL_Poster.pdf">poster</a>]
-</p></li>
+    <section class="card" aria-label="About me">
+      <h2>About Me</h2>
+      <ol class="timeline">
+        <li><strong>2024-Present:</strong> Research Scientist, OpenAI</li>
+        <li><strong>2020-2024:</strong> Research Scientist, DeepMind</li>
+        <li><strong>2019-2020:</strong> Postdoc, Department of Electrical Engineering, Princeton University</li>
+        <li><strong>2014-2019:</strong> Ph.D. in Statistics, Purdue University</li>
+      </ol>
+    </section>
 
-<li><p> 
-<strong>Information Directed Sampling for Sparse Linear Bandits</strong><br>
-<b>Botao Hao</b>, Tor Lattimore, Wei Deng <br>
-<em>NeurIPS 2021 <strong style="color: red;">(spotlight)</strong>.
- </em>
-[<a href="https://proceedings.neurips.cc/paper/2021/hash/8ba6c657b03fc7c8dd4dff8e45defcd2-Abstract.html">Proceedings</a>]
-[<a href="NeurIPS2021_Sparse_IDS_slides.pdf">slides</a>]
-</p></li>
+    <section class="card" aria-label="Selected publications">
+      <h2>Selected Publications</h2>
+      <ol class="pubs">
+        <li>
+          <strong>GPT-5 System Card</strong><br>
+          OpenAI, Aaditya Singh, Adam Fry, Adam Perelman, Adam Tart, Adi Ganesh, ... , <strong>Botao Hao</strong>, et al.<br>
+          <span class="muted">arXiv 2026.</span>
+          <a href="https://arxiv.org/abs/2601.03267">arXiv</a>
+        </li>
+        <li>
+          <strong>OpenAI o1 System Card</strong><br>
+          OpenAI, Aaron Jaech, Adam Kalai, Adam Lerer, Adam Richardson, Ahmed El-Kishky, ... , <strong>Botao Hao</strong>, et al.<br>
+          <span class="muted">arXiv 2024.</span>
+          <a href="https://arxiv.org/abs/2412.16720">arXiv</a>
+        </li>
+        <li>
+          <strong>Leveraging Demonstrations to Improve Online Learning: Quality Matters</strong><br>
+          <strong>Botao Hao</strong>, Rahul Jain, Tor Lattimore, Benjamin Van Roy, Zheng Wen<br>
+          <span class="muted">ICML 2023.</span>
+          <a href="https://arxiv.org/abs/2302.03319">arXiv</a>
+        </li>
+        <li>
+          <strong>Regret Bounds for Information-Directed Reinforcement Learning</strong><br>
+          <strong>Botao Hao</strong>, Tor Lattimore<br>
+          <span class="muted">NeurIPS 2022.</span>
+          <a href="https://arxiv.org/abs/2206.04640">arXiv</a>
+        </li>
+        <li>
+          <strong>Contextual Information-Directed Sampling</strong><br>
+          <strong>Botao Hao</strong>, Tor Lattimore, Chao Qin<br>
+          <span class="muted">ICML 2022.</span>
+          <a href="https://arxiv.org/abs/2205.10895">arXiv</a>
+        </li>
+        <li>
+          <strong>Online Sparse Reinforcement Learning</strong><br>
+          <strong>Botao Hao</strong>, Tor Lattimore, Csaba Szepesvari, Mengdi Wang<br>
+          <span class="muted">AISTATS 2021.</span>
+          <a href="https://arxiv.org/pdf/2011.04018.pdf">arXiv</a>
+          <a href="AISTATS2021_SparseRL_Poster.pdf">poster</a>
+        </li>
+        <li>
+          <strong>Information Directed Sampling for Sparse Linear Bandits</strong><br>
+          <strong>Botao Hao</strong>, Tor Lattimore, Wei Deng<br>
+          <span class="muted">NeurIPS 2021 (spotlight).</span>
+          <a href="https://proceedings.neurips.cc/paper/2021/hash/8ba6c657b03fc7c8dd4dff8e45defcd2-Abstract.html">Proceedings</a>
+          <a href="NeurIPS2021_Sparse_IDS_slides.pdf">slides</a>
+        </li>
+        <li>
+          <strong>High-Dimensional Sparse Linear Bandits</strong><br>
+          <strong>Botao Hao</strong>, Tor Lattimore, Mengdi Wang<br>
+          <span class="muted">NeurIPS 2020.</span>
+          <a href="https://arxiv.org/pdf/2011.04020.pdf">arXiv</a>
+          <a href="NeurIPS2020_HD_Bandits_Slides.pdf">slides</a>
+          <a href="NeurIPS2020_HD_Bandits_Poster.pdf">poster</a>
+        </li>
+        <li>
+          <strong>Adaptive Exploration in Linear Contextual Bandit</strong><br>
+          <strong>Botao Hao</strong>, Tor Lattimore, Csaba Szepesvari<br>
+          <span class="muted">AISTATS 2020.</span>
+          <a href="https://arxiv.org/abs/1910.06996">arXiv</a>
+          <a href="adaptive_exploration.pdf">slides</a>
+        </li>
+        <li>
+          <strong>Sparse and Low-rank Tensor Estimation via Cubic Sketchings</strong><br>
+          <strong>Botao Hao</strong>, Anru Zhang, Guang Cheng<br>
+          <span class="muted">IEEE Transactions on Information Theory (2020).</span>
+          <a href="https://arxiv.org/abs/1801.09326">arXiv</a>
+          <a href="fbdc.pdf">slides</a>
+        </li>
+        <li>
+          <strong>Bootstrapping Upper Confidence Bound</strong><br>
+          <strong>Botao Hao</strong>, Yasin Abbasi-Yadkori, Zheng Wen, Guang Cheng<br>
+          <span class="muted">NeurIPS 2019.</span>
+          <a href="https://arxiv.org/abs/1906.05247">arXiv</a>
+          <a href="poster_nips.pdf">poster</a>
+        </li>
+        <li>
+          <strong>Simultaneous Clustering and Estimation of Heterogeneous Graphical Models</strong><br>
+          <strong>Botao Hao</strong>, Will Wei Sun, Yufeng Liu, Guang Cheng<br>
+          <span class="muted">Journal of Machine Learning Research.</span>
+          <a href="http://www.jmlr.org/papers/v18/17-019.html">pdf</a>
+          <a href="SLDS_talk.pdf">slides</a>
+        </li>
+      </ol>
+    </section>
 
+    <footer>
+      Last updated: <span id="last-updated"></span>
+    </footer>
+  </main>
 
-<li><p> 
-<strong>High-Dimensional Sparse Linear Bandits</strong><br>
-<b>Botao Hao</b>, Tor Lattimore,  Mengdi Wang<br>
-<em>NeurIPS 2020. </em>
-[<a href="https://arxiv.org/pdf/2011.04020.pdf">arXiv</a>]
-[<a href="NeurIPS2020_HD_Bandits_Slides.pdf">slides</a>]
-[<a href="NeurIPS2020_HD_Bandits_Poster.pdf">poster</a>]
-</p></li>
-
-
-
-<li><p> 
-<strong>Adaptive Exploration in Linear Contextual Bandit</strong><br>
-<b>Botao Hao</b>, Tor Lattimore,  Csaba Szepesvári<br>
-<em>AISTATS 2020. </em>
-[<a href="https://arxiv.org/abs/1910.06996">arXiv</a>]
-[<a href="adaptive_exploration.pdf">slides</a>]
-</p></li>
-
-<li><p> 
-<strong>Sparse and Low-rank Tensor Estimation via Cubic Sketchings</strong><br>
-<b>Botao Hao</b>, Anru Zhang, Guang Cheng<br>
-<em>IEEE Transactions on Information Theory (2020). </em>
-[<a href="https://arxiv.org/abs/1801.09326">arXiv</a>]
-[<a href="fbdc.pdf">slides</a>]
-<br>
-<em>Accepted in part to AISTATS 2020.</em>
-</p></li>
-
-
-
-<li><p> 
-<strong>Bootstrapping Upper Confidence Bound</strong><br>
-<b>Botao Hao</b>, Yasin Abbasi-Yadkori, Zheng Wen, Guang Cheng<br>
-<em>NeurIPS 2019. </em>
-[<a href="https://arxiv.org/abs/1906.05247">arXiv</a>]
-[<a href="poster_nips.pdf">poster</a>]
-</p></li>
-
-
-  <li><p> 
-  <strong>Simultaneous Clustering and Estimation of Heterogeneous Graphical Models</strong><br>
-  <b>Botao Hao</b>, Will Wei Sun, Yufeng Liu, Guang Cheng<br>
-  <em>Journal of Machine Learning Research. </em>
-  [<a href="http://www.jmlr.org/papers/v18/17-019.html">pdf</a>]
-  [<a href="SLDS_talk.pdf">slides</a>]
-  </p></li>
-
-	
-
-	
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-<hr>
-
-
-<script type="text/JavaScript" language="JavaScript">
-//
-// format date as dd-mmm-yy
-// example: 12-Jan-99
-//
-function date_ddmmmyy(date)
-{
-  var d = date.getDate();
-  var m = date.getMonth() + 1;
-  var y = date.getYear();
-
-  // handle different year values
-  // returned by IE and NS in
-  // the year 2000.
-  if(y >= 2000)
-  {
-    y -= 2000;
-  }
-  if(y >= 100)
-  {
-    y -= 100;
-  }
-
-  // could use splitString() here
-  // but the following method is
-  // more compatible
-  var mmm =
-    ( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':
-    ( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':
-    ( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':
-    (10==m)?'Oct':(11==m)?'Nov':'Dec';
-
-  return "" +
-    (d<10?"0"+d:d) + "-" +
-    mmm + "-" +
-    (y<10?"0"+y:y);
-}
-
-
-//
-// get last modified date of the
-// current document.
-//
-function date_lastmodified()
-{
-  var lmd = document.lastModified;
-  var s   = "Unknown";
-  var d1;
-
-  // check if we have a valid date
-  // before proceeding
-  if(0 != (d1=Date.parse(lmd)))
-  {
-    s = "" + date_ddmmmyy(new Date(d1));
-  }
-
-  return s;
-}
-
-//
-// finally display the last modified date
-// as DD-MMM-YY
-//
-document.write("This page was updated on " + date_lastmodified() + ".");
-
-//
-</script>
-</body></html>
+  <script>
+    const el = document.getElementById('last-updated');
+    if (el) {
+      el.textContent = new Date(document.lastModified).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+    }
+  </script>
+</body>
+</html>
